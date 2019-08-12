@@ -2,12 +2,12 @@
   <br>
   <img src="https://i.imgur.com/UQ4DFMq.png" alt="sdl2-logo" width="200"></a>
   <br>
-    Modern CMake FindSDL2
+    CMake Modern FindSDL2
   <br>
 </h1>
 
 <p align=center>
-  <b> CMake packages to find SDL2 and its extensions. </b>
+  <b> CMake modules to find SDL2 and its extensions. </b>
 </p>
 
 <p align="center">
@@ -25,7 +25,7 @@ Include the new modules.
 ```cmake
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/sdl2)
 ```
-Find the package you're want to use.
+Find the package you want to use.
 ```cmake
 find_package(SDL2 REQUIRED)
 find_package(SDL2_ttf REQUIRED)
@@ -48,5 +48,5 @@ This project is licensed under the ISC license. Please see the LICENSE.md file
 for details.
 
 ## Acknowledgments
-* Thanks to [aminosbh](https://github.com/aminosbh) for creating similar scripts
-  to use as a reference
+* Thanks to [aminosbh](https://github.com/aminosbh) for creating similar cmake
+  scripts which I referenced
