@@ -44,8 +44,8 @@ If you're writing an application, link against `SDL2::SDL2`. If you're writing
 a library, link against `SDL2::Core` instead.
 
 ## License
-This project is licensed under the ISC license. Please see the LICENSE.md file
-for details.
+This project is licensed under the ISC license. Please see the [`LICENSE.md`](LICENSE.md)
+file for details.
 
 ## Acknowledgments
 * Thanks to [aminosbh](https://github.com/aminosbh) for creating similar cmake
