@@ -42,14 +42,14 @@ if (NOT SDL2_GFX_LIBRARIES)
     find_library(SDL2_GFX_LIBRARY_RELEASE
         NAMES SDL2_gfx
         PATH_SUFFIXES lib ${_SDL2_GFX_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_GFX_PATH}
     )
 
     # Look for the debug version of SDL2.
     find_library(SDL2_GFX_LIBRARY_DEBUG
         NAMES SDL2_gfxd
         PATH_SUFFIXES lib ${_SDL2_GFX_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_GFX_PATH}
     )
 
     include(SelectLibraryConfigurations)

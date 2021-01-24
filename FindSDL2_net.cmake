@@ -42,14 +42,14 @@ if (NOT SDL2_NET_LIBRARIES)
     find_library(SDL2_NET_LIBRARY_RELEASE
         NAMES SDL2_net
         PATH_SUFFIXES lib ${_SDL2_NET_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_NET_PATH}
     )
 
     # Look for the debug version of SDL2.
     find_library(SDL2_NET_LIBRARY_DEBUG
         NAMES SDL2_netd
         PATH_SUFFIXES lib ${_SDL2_NET_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_NET_PATH}
     )
 
     include(SelectLibraryConfigurations)
