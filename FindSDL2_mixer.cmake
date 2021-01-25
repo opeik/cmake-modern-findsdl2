@@ -42,14 +42,14 @@ if (NOT SDL2_MIXER_LIBRARIES)
     find_library(SDL2_MIXER_LIBRARY_RELEASE
         NAMES SDL2_mixer
         PATH_SUFFIXES lib ${_SDL2_MIXER_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_MIXER_PATH}
     )
 
     # Look for the debug version of SDL2.
     find_library(SDL2_MIXER_LIBRARY_DEBUG
         NAMES SDL2_mixerd
         PATH_SUFFIXES lib ${_SDL2_MIXER_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_MIXER_PATH}
     )
 
     include(SelectLibraryConfigurations)

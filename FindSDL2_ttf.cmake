@@ -42,14 +42,14 @@ if (NOT SDL2_TTF_LIBRARIES)
     find_library(SDL2_TTF_LIBRARY_RELEASE
         NAMES SDL2_ttf
         PATH_SUFFIXES lib ${_SDL2_TTF_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_TTF_PATH}
     )
 
     # Look for the debug version of SDL2.
     find_library(SDL2_TTF_LIBRARY_DEBUG
         NAMES SDL2_ttfd
         PATH_SUFFIXES lib ${_SDL2_TTF_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_TTF_PATH}
     )
 
     include(SelectLibraryConfigurations)
