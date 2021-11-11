@@ -42,14 +42,14 @@ if (NOT SDL2_IMAGE_LIBRARIES)
     find_library(SDL2_IMAGE_LIBRARY_RELEASE
         NAMES SDL2_image
         PATH_SUFFIXES lib ${_SDL2_IMAGE_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_IMAGE_PATH}
     )
 
     # Look for the debug version of SDL2.
     find_library(SDL2_IMAGE_LIBRARY_DEBUG
         NAMES SDL2_imaged
         PATH_SUFFIXES lib ${_SDL2_IMAGE_PATH_SUFFIX}
-        PATHS ${SDL2_PATH}
+        PATHS ${SDL2_IMAGE_PATH}
     )
 
     include(SelectLibraryConfigurations)
